@@ -18,8 +18,8 @@ import com.nipunbirla.boxloaderlib.R;
 
 public class BoxLoaderView extends View {
 
-    private static final int FRAME_RATE = 10;
-    private static final int DEFAULT_SPEED = 20;
+    private static final int FRAME_RATE = 5;
+    private static final int DEFAULT_SPEED = 5;
     private static final int STROKE_WIDTH = 20;
     private static final int INNER_MARGIN = 20;
 
@@ -175,7 +175,7 @@ public class BoxLoaderView extends View {
                         increaseRight();
                     } else {
                         increaseLeft();
-                        if(rect.left >= canvas.getWidth()/2 - STROKE_WIDTH){
+                        if(rect.left >= canvas.getWidth()/2 + STROKE_WIDTH){
                             dir++;
                             return true;
                         }
@@ -186,7 +186,7 @@ public class BoxLoaderView extends View {
                         increaseBottom();
                     } else {
                         increaseTop();
-                        if(rect.top >= canvas.getHeight()/2 - STROKE_WIDTH){
+                        if(rect.top >= canvas.getHeight()/2 + STROKE_WIDTH){
                             dir++;
                             return true;
                         }
