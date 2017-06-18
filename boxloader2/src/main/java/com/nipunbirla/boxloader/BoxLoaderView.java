@@ -28,7 +28,6 @@ public class BoxLoaderView extends View {
     private int strokeWidth;
     private int strokeColor, loaderColor;
     private boolean dirChange = false;
-    private Paint paint;
     private Box box, outBox;
     private Handler handler;
 
@@ -45,8 +44,6 @@ public class BoxLoaderView extends View {
 
     private void init(Context context, AttributeSet attrs){
         handler = new Handler();
-        paint = new Paint();
-        paint.setColor(Color.BLUE);
 
         if(attrs != null) {
             TypedArray a = context.obtainStyledAttributes(attrs,
