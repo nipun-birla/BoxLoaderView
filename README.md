@@ -47,9 +47,9 @@ To set Loader speed :
 
 <h2>Defaults</h2>
 
-<b>Loader Color : </b> BLUE<ls>
-<b>Stroke/Background Color : </b> WHITE<ls>
-<b>Speed : </b> 10<ls>
+<b>Loader Color : </b> BLUE<lb>
+<b>Stroke/Background Color : </b> WHITE<lb>
+<b>Speed : </b> 10<lb>
 <b>Width : </b> 20
 
 
