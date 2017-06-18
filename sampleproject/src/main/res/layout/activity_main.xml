@@ -5,13 +5,12 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#eeedac"
     tools:context="com.nipunbirla.boxloader.MainActivity">
 
     <android.support.v7.widget.CardView
         android:id="@+id/cv_loading"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_centerInParent="true">
 
         <com.nipunbirla.boxloader.BoxLoaderView
@@ -19,8 +18,8 @@
             android:layout_height="match_parent"
             app:strokeColor="#995876"
             app:loaderColor="#C67890"
-            app:strokeWidth="40"
-            app:speed="20"/>
+            app:strokeWidth="20"
+            app:speed="10"/>
     </android.support.v7.widget.CardView>
 
     <TextView
