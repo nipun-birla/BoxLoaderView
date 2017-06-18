@@ -1,4 +1,5 @@
-BoxLoaderView
+BoxLoaderView[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-BoxLoaderView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/5907)
+
 ===
 
 ![Screenshot](https://github.com/nipun-birla/BoxLoaderView/blob/master/preview.gif)
