@@ -44,3 +44,13 @@ To set stroke width/outer margin :
 To set Loader speed :
 
         mLoader.setSpeed(20);
+
+<h2>Defaults</h2>
+
+<b>Loader Color : </b> BLUE
+<b>Stroke/Background Color : </b> WHITE
+<b>Speed : </b> 10
+<b>Width : </b> 20
+
+
+
