@@ -78,17 +78,22 @@ public class BoxLoaderView extends View {
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
         if(outBox == null){
-            outBox = new Box(0,0,canvas.getWidth(), canvas.getHeight(), strokeColor, 10);
+            outBox = new Box(left, top, right, bottom, strokeColor, 10);
             outBox.getPaint().setStrokeWidth(strokeWidth);
         }
-        canvas.drawRect(outBox.getLeft(), outBox.getTop(), outBox.getRight(), outBox.getBottom(), outBox.getPaint());
         if(box == null){
-            box = new Box(strokeWidth, strokeWidth, canvas.getWidth()/2 - strokeWidth, canvas.getHeight()/2 - strokeWidth, loaderColor, 10);
+            box = new Box(left + strokeWidth, top + strokeWidth, right/2 - strokeWidth, bottom/2 - strokeWidth, loaderColor, 10);
             box.setDx(speed);
             box.setDy(speed);
         }
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        canvas.drawRect(outBox.getLeft(), outBox.getTop(), outBox.getRight(), outBox.getBottom(), outBox.getPaint());
         dirChange = box.bounce(canvas, strokeWidth);
         rectifyBoundaries(canvas, box);
         canvas.drawRect(box.getLeft(), box.getTop(), box.getRight(), box.getBottom(), box.getPaint());
